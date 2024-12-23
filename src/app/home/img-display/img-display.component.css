@@ -1,0 +1,246 @@
+.custom-toggler {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    z-index: 1000; 
+  }
+  
+  .custom-navbar {
+    background-color: #5756A3 !important; 
+  }
+  
+  .custom-navbar .nav-link {
+    font-weight: bold;
+    color: #333 !important;
+  }
+  
+  
+  .auth-buttons {
+    margin-left: auto;
+  }
+  
+  .auth-buttons .btn {
+    font-size: 0.9rem;
+    padding: 8px 20px;
+    border-radius: 5px;
+  }
+  
+  .custom-toggler:focus {
+    outline: none;
+  }
+  
+  .custom-toggler .line {
+    height: 3px;
+    width: 100%;
+    background-color: #e5e0e0; 
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+  
+  
+  .custom-toggler .line:nth-child(3) {
+    width: 70%; 
+    margin-right: auto; 
+  }
+  
+  
+  /* Adjust size for larger screens */
+  @media (min-width: 768px) {
+    .custom-toggler {
+      width: 40px;
+      height: 24px;
+    }
+  
+    .custom-toggler .line {
+      height: 4px;
+    }
+  }
+  
+    .custom-navbar .nav-link {
+      font-weight: bold;
+      color: #333 !important;
+    }
+    
+  
+    .action-buttons {
+      margin-left: auto;
+    }
+    
+    .action-buttons .btn {
+      font-size: 0.9rem;
+      padding: 8px 20px;
+      border-radius: 5px;
+    }
+    
+    .search-button-sm {
+      padding-top: 10px;
+    }
+    
+    /* Responsive Behavior */
+    @media (max-width: 992px) {
+      .action-buttons {
+        display: none; 
+      }
+    
+      .search-button-sm {
+        display: flex; 
+      }
+    }
+    
+    
+    /* Responsive behavior */
+    @media (max-width: 992px) {
+      .auth-buttons {
+        display: none; 
+      }
+    }
+    
+   /* Sidebar */
+  .custom-offcanvas {
+    width: 50%;
+    background-color: #5756A3; 
+  }
+  
+  .custom-offcanvas .list-unstyled a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+  }
+  
+  
+  
+  /* Navbar */
+  .custom-navbar {
+    background-color: #5756A3 !important; 
+  }
+  
+  .custom-navbar .nav-link {
+    font-weight: bold;
+    color: white !important; 
+  }
+  
+  
+  
+  /* Sidebar */
+  .custom-offcanvas {
+    width: 50%;
+    background-color: #5756A3; 
+  }
+  
+  .custom-offcanvas .list-unstyled a {
+    color: white; 
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+  }
+  
+  .custom-offcanvas .list-unstyled a:hover {
+    color: white; 
+  }
+  
+  /* Register Button */
+  .auth-buttons .btn-primary {
+    background-color: white; 
+    color: #FF4F00 !important; 
+  }
+  
+  .auth-buttons .btn-outline-primary {
+    color: white !important; 
+    border-color: white; 
+  }
+  
+  .auth-buttons .btn:hover {
+    background-color: #77ddce !important;
+    color: white !important; 
+    border-color: #77ddce;
+  }
+
+/* hero section */
+/* Hero Section */
+.hero-section {
+    color: white;
+    min-height: 80vh; /* Ensures the hero section takes up most of the viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .hero-section p {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    font-weight: bold; 
+    color: #FFFFFF; 
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);  */
+  }
+  
+  .hero-section p {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+  }
+  
+  .hero-section .btn {
+    font-size: 1rem;
+    padding: 0.75rem 2rem;
+    border-radius: 5px;
+  }
+  
+  .hero-section .btn-primary {
+    background-color: #5756A3; /* Matches the navbar color */
+    border: none;
+  }
+  
+  .hero-section .btn-primary:hover {
+    background-color: #77ddce; /* Matches the hover style in the navbar */
+    color: white;
+  }
+  
+  .hero-section .btn-outline-light {
+    color: white;
+    border: 2px solid white;
+  }
+  
+  .hero-section .btn-outline-light:hover {
+    background-color: white;
+    color: #5756A3;
+  }
+  
+  .hero-section .btn-light {
+    background-color: white;
+    color: #5756A3;
+  }
+  
+  .hero-section .btn-light:hover {
+    background-color: #77ddce;
+    color: white;
+  }
+  
+  /* Responsive Design for Hero Section */
+  @media (max-width: 768px) {
+    .hero-section h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-section p {
+      font-size: 1rem;
+    }
+  
+    .hero-section .btn {
+      font-size: 0.9rem;
+      padding: 0.6rem 1.5rem;
+    }
+  }
+  
+  
+  
+  
+    
