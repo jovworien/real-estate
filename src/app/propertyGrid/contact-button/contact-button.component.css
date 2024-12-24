@@ -1,0 +1,80 @@
+.section-title {
+    font-size: 1.5rem; /* Default font size */
+    font-weight: bold;
+    color: #333; /* Neutral color for heading */
+    margin-bottom: 20px;
+  }
+  
+  .section-title h2 {
+    font-size: 2rem; /* Larger size for desktops */
+  }
+  
+  @media (max-width: 768px) {
+    .section-title h2 {
+      font-size: 1.5rem; /* Adjust size for tablets and smaller screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .section-title h2 {
+      font-size: 1.25rem; /* Adjust size for mobile screens */
+    }
+  }
+  
+  
+  .card {
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .image-container {
+    position: relative;
+  }
+  
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  /* For Sale Badge */
+  .badge-sale {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #FF4F00;
+    color: white;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    z-index: 10;
+  }
+  
+  @media (max-width: 576px) {
+    .card-img-top {
+      height: 100px; /* Reduce image size on smaller screens */
+    }
+  
+    .badge-sale {
+      font-size: 12px;
+      padding: 2px 4px;
+    }
+  }
+  .btn-primary {
+    background-color: #77ddce !important; 
+    border-color: #77ddce !important;    
+    color: #fff !important;             
+  }
+  
+  .btn-primary:hover {
+    background-color: #66cabd !important; 
+    border-color: #66cabd !important;
+  }
+
+  
+  

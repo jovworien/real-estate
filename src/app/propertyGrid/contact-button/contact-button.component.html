@@ -1,1 +1,35 @@
-<p>contact-button works!</p>
+<!-- <p>contact-button works!</p> -->
+
+<div class="container py-5">
+  <!-- Section Title -->
+  <div class="section-title text-center mb-4">
+    <h2>Popular Properties</h2>
+    <p>
+      Explore top-rated homes and investments tailored to your needs.
+    </p>
+  </div>
+  
+  <div class="row">
+    <!-- Product Cards -->
+    <div class="col-12 col-sm-6 col-md-4 mb-4" *ngFor="let product of products">
+      <div class="card">
+        <div class="image-container">
+          <!-- For Sale Badge -->
+          <span class="badge-sale">For Sale</span>
+          <img src="{{ product.image }}" alt="Product Image" class="card-img-top">
+        </div>
+        <div class="card-body text-center">
+          <!-- Buttons -->
+          <div class="button-group mt-3">
+            <button class="btn btn-primary btn-sm" routerLink="/cart/display2">
+              <i class="fas fa-phone"></i> Contact Us
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

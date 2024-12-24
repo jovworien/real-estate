@@ -163,10 +163,10 @@
   }
 
 /* hero section */
-/* Hero Section */
+
 .hero-section {
     color: white;
-    min-height: 80vh; /* Ensures the hero section takes up most of the viewport height */
+    min-height: 80vh; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -180,7 +180,6 @@
     margin-top: 1rem;
     font-weight: bold; 
     color: #FFFFFF; 
-    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);  */
   }
   
   .hero-section p {
@@ -200,7 +199,7 @@
   }
   
   .hero-section .btn-primary:hover {
-    background-color: #77ddce; /* Matches the hover style in the navbar */
+    background-color: #77ddce; 
     color: white;
   }
   
