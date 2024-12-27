@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './vid-display.component.css'
 })
 export class VidDisplayComponent {
+  sidebarActive = false;
 
+  toggleSidebar() {
+    this.sidebarActive = !this.sidebarActive;
+  }
 }

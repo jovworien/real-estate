@@ -27,7 +27,7 @@ import { MyInvstComponent } from './dashboard/my-invst/my-invst.component';
 import { ProfileComponent } from './dashboard/profile/profile.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', redirectTo: 'img-display', pathMatch: 'full' },
   { path: 'vid-display', component: VidDisplayComponent },
   { path: 'slide-display', component: SlideDisplayComponent },
   { path: 'img-display', component: ImgDisplayComponent },

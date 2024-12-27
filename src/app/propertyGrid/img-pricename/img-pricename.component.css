@@ -1,0 +1,110 @@
+.section-title {
+    font-size: 1.5rem; /* Default font size */
+    font-weight: bold;
+    color: #333; /* Neutral color for heading */
+    margin-bottom: 20px;
+  }
+  
+  .section-title h2 {
+    font-size: 2rem; /* Larger size for desktops */
+  }
+  
+  @media (max-width: 768px) {
+    .section-title h2 {
+      font-size: 1.5rem; /* Adjust size for tablets and smaller screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .section-title h2 {
+      font-size: 1.25rem; /* Adjust size for mobile screens */
+    }
+  }
+
+
+  .card {
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-img-top {
+    margin-top: 10px;
+    height: 200px;
+    object-fit: contain;
+  }
+    
+  /* Media query to adjust image and badge positioning on smaller screens */
+  @media (max-width: 576px) {
+    .card-img-top {
+      height: 100px;  /* Reduce image size on smaller screens */
+    }
+  
+    .discount-badge {
+      font-size: 12px;  
+      padding: 2px 4px; 
+    }
+  
+    .love-badge {
+      font-size: 20px;
+    }
+  }
+
+  .card-body .button-group {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .btn-primary  {
+    background-color: rgb(221, 168, 71) !important;
+  }
+
+ .btn-success{
+  background-color: #464545 !important;
+  outline-color: none;
+ }
+  
+  .card-body .btn i {
+    margin-right: 5px; /* Space between icon and text */
+  }
+  
+  .card-body .btn {
+    width: 48%;
+    font-size: 0.875rem;
+  }
+  
+  @media (max-width: 576px) {
+    .card-body .btn {
+      font-size: 0.75rem;
+    }
+  }
+  
+  .price-section .old-price span {
+    font-size: 0.9rem; 
+    color: gray; 
+  }
+  
+  .price-section .new-price span {
+    font-size: 1.2rem; 
+    font-weight: bold;
+  }
+  
+  .price-section i {
+    font-size: 1rem;
+  }
+  
+  .price-section .old-price span s {
+    color: #bbb; 
+  }
+
+  .button-group {
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  

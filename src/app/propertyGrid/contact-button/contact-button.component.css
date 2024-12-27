@@ -37,9 +37,17 @@
   }
   
   .card-img-top {
-    height: 200px;
-    object-fit: cover;
-  }
+    height: 250px; /* Increased height for better fit */
+    object-fit: cover; /* Ensures the image fills the height while maintaining proportions */
+    width: 100%; /* Ensures full width */
+}
+
+@media (max-width: 576px) {
+    .card-img-top {
+        height: 150px; /* Adjust height for smaller screens */
+    }
+}
+
   
   /* For Sale Badge */
   .badge-sale {
@@ -75,6 +83,7 @@
     background-color: #66cabd !important; 
     border-color: #66cabd !important;
   }
+
 
   
   

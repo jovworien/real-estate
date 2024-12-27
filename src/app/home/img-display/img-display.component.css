@@ -194,7 +194,7 @@
   }
   
   .hero-section .btn-primary {
-    background-color: #5756A3; /* Matches the navbar color */
+    background-color: #5756A3; 
     border: none;
   }
   
@@ -238,6 +238,7 @@
       padding: 0.6rem 1.5rem;
     }
   }
+  
   
   
   
