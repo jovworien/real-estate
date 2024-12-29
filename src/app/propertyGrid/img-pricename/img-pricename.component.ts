@@ -3,33 +3,36 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-img-pricename',
   templateUrl: './img-pricename.component.html',
-  styleUrl: './img-pricename.component.css'
+  styleUrls: ['./img-pricename.component.css']
 })
 export class ImgPricenameComponent {
-  products = [
+  homes = [
     {
-      name: 'Hair',
+      price: '$774,000',
+      title: 'House in Arlington, VA',
       image: '../images/productgrid/house1.jpeg',
-      oldPrice: 1200, 
-      newPrice: 1000
+      status: 'New' // Added status property
     },
     {
-      name: 'Hair ',
+      price: '$540,000',
+      title: 'Condo in Arlington, VA',
       image: '../images/productgrid/house1.jpeg',
-      oldPrice: 1500, 
-      newPrice: 1200 
+      status: 'For Sale' // Added status property
     },
     {
-      name: 'Woman hair',
-      image: '../images/Hair/hair_2.jpeg',
-      oldPrice: 1400, 
-      newPrice: 1200  
+      price: '$645,000',
+      title: 'Townhouse in Arlington, VA',
+      image: '../images/productgrid/house1.jpeg',
+      status: 'New' // Added status property
     },
     {
-      name: 'Hair',
-      image: '../images/Hair/hair_5.jpeg',
-      oldPrice: 1400, 
-      newPrice: 1200  
+      price: '$678,000',
+      title: 'Condo in Arlington, VA',
+      image: '../images/productgrid/house1.jpeg',
+      status: 'For Sale' // Added status property
     }
   ];
+
+  
 }
+

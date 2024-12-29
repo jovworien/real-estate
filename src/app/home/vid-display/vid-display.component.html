@@ -1,13 +1,171 @@
-<section class="hero">
-    <div class="hero-container">
-      <div class="hero-content">
-        <h1>Find Your Dream Home</h1>
-        <p>Search through thousands of properties for sale or rent.</p>
-        <form class="search-form">
-          <input type="text" placeholder="Search by location, keyword..." />
-          <button type="submit">Search</button>
-        </form>
+<nav class="navbar navbar-expand-lg custom-navbar">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+    <!-- Custom Toggle Button -->
+    <button
+      class="custom-toggler d-lg-none order-1"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#sidebar"
+      aria-controls="sidebar"
+    >
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </button>
+
+   <!-- Navbar Brand -->
+<a class="navbar-brand order-2 order-lg-1 ms-auto ms-lg-0" href="#">
+  <div class="logo"><span class="logo-red">Quat</span>er</div>
+</a>
+
+
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse order-3" id="navbarNav">
+      <ul class="navbar-nav d-flex justify-content-center mx-auto">
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle active"
+            href="#"
+            id="homeDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Home
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+            <li><a class="dropdown-item" routerLink="/slide-display">Home 1</a></li>
+            <li><a class="dropdown-item" routerLink="">Home 2</a></li>
+            <li><a class="dropdown-item" routerLink="">Home 3</a></li>
+            <li><a class="dropdown-item" routerLink="">Home 4</a></li>
+            <li><a class="dropdown-item" routerLink="">Home 5</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/services">Property</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/services">Listing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact</a>
+        </li>
+      </ul>
+
+      <!-- Login and Register Buttons -->
+      <div class="auth-buttons d-none d-lg-flex">
+        <a href="/login" class="btn btn-outline-primary me-2">Login</a>
+        <a href="/register" class="btn btn-primary">Register</a>
       </div>
     </div>
-    <img src="../images/productgrid/house1.jpeg" alt="Hero Image" class="hero-image">
-  </section>
+  </div>
+</nav>
+
+  <div class="offcanvas offcanvas-start custom-offcanvas" id="sidebar" tabindex="-1" aria-labelledby="sidebarLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="sidebarLabel">Menu</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="list-unstyled">
+        <li class="mb-2">
+          <a
+            class="d-flex align-items-center justify-content-between text-decoration-none"
+            data-bs-toggle="collapse"
+            href="#homeSubmenu"
+            role="button"
+            aria-expanded="false"
+            aria-controls="homeSubmenu"
+          >
+            Home <i class="fas fa-chevron-down"></i>
+          </a>
+          <ul class="collapse list-unstyled ps-3 mt-2" id="homeSubmenu">
+            <li><a routerLink="" class="text-decoration-none">Home 1</a></li>
+            <li><a href="/home2" class="text-decoration-none">Home 2</a></li>
+            <li><a href="/home3" class="text-decoration-none">Home 3</a></li>
+          </ul>
+        </li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+<main class="hero">
+    <div class="swiper hero-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="gradient-overlay"></div>
+          <img src="../images/hero-images/house1.jpg" alt="Background Image 1" class="hero-image" />
+          <div class="hero-content">
+            <h1 class="h1">Discover your perfect home</h1>
+            <!-- <p>Search through thousands of properties for sale or rent.</p> -->
+            <ul class="nav-link">
+              <li><a routerLink="/buy">Buy</a></li>
+              <li><a routerLink="/sell">Sell</a></li>
+              <li><a routerLink="/rent">Rent</a></li>
+              <li><a routerLink="/mortgage">Mortgage</a></li>
+              <li><a routerLink="/contact">Contact</a></li>
+            </ul>
+            <div class="search-bar">
+              <input type="text" placeholder="Address, School, City, Zip or Neighborhood">
+              <button>Search</button>
+            </div>
+            <!-- <div class="hero-buttons">
+                <a href="#" class="btn btn-primary">Find Out More →</a>
+            </div> -->
+          </div>
+        </div>     
+      </div>
+    </div>
+</main>
+<section>
+  <app-img-pricename></app-img-pricename>
+</section>
+
+<!-- 
+<header class="hero">
+  <div class="gradient-overlay"></div>
+  <img src="../images/hero-images/new.jpg" alt="Hero Background" class="hero-image" />
+  <div class="hero-content">
+    <h1>Discover your perfect home</h1>
+    <p>The most complete source of homes for sale & real estate near you</p>
+    <ul class="nav-link">
+      <li><a routerLink="/buy">Buy</a></li>
+      <li><a routerLink="/sell">Sell</a></li>
+      <li><a routerLink="/rent">Rent</a></li>
+      <li><a routerLink="/mortgage">Mortgage</a></li>
+      <li><a routerLink="/contact">Contact</a></li>
+    </ul>
+    <div class="search-bar">
+      <input type="text" placeholder="Address, School, City, Zip or Neighborhood">
+      <button>Search</button>
+    </div>
+  </div>
+</header> -->
+
+
+<!-- <section class="listings-section">
+  <div class="container">
+    <h2>Homes around $675,000</h2>
+    <div class="listings-grid">
+      <div class="listing" *ngFor="let home of homes">
+        <img [src]="home.image" [alt]="home.title" />
+        <h3>{{ home.price }}</h3>
+        <p>{{ home.title }}</p>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+
+
+
+
+
+
