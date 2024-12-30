@@ -35,7 +35,7 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="homeDropdown">
               <li><a class="dropdown-item" routerLink="/slide-display">Home 1</a></li>
-              <li><a class="dropdown-item" routerLink="">Home 2</a></li>
+              <li><a class="dropdown-item" routerLink="/vid-display">Home 2</a></li>
               <li><a class="dropdown-item" routerLink="">Home 3</a></li>
               <li><a class="dropdown-item" routerLink="">Home 4</a></li>
               <li><a class="dropdown-item" routerLink="">Home 5</a></li>
@@ -95,19 +95,27 @@
       </div>
     </div>
  
-    <div class="hero-section text-center text-white d-flex align-items-center justify-content-center" style="background-image: url('../images/hero-images/house.jpg'); background-size: cover; background-position: center; min-height: 80vh;">
-        <div class="container">
-          <h1 class="display-4 fw-bold">Find Your Perfect Home</h1>
-          <h3 class="lead">Discover homes for sale or rent tailored to your lifestyle.</h3>
-          <div class="d-flex justify-content-center gap-3 mt-4">
-            <a href="/buy" class="btn btn-primary btn-lg">Buy</a>
-            <a href="/rent" class="btn btn-outline-light btn-lg">Rent</a>
-            <a href="/list" class="btn btn-light btn-lg">Sell</a>
-          </div>
+    <div class="hero-section text-center text-white d-flex align-items-center justify-content-center">
+      <!-- Background Image -->
+      <img src="../images/hero-images/house.jpg" alt="Background" class="background-image">
+    
+      <!-- Overlay -->
+      <div class="overlay"></div>
+    
+      <!-- Content -->
+      <div class="container">
+        <h1 class="display-4 fw-bold">Find Your Perfect Home</h1>
+        <h3 class="lead">Discover homes for sale or rent tailored to your lifestyle.</h3>
+        <div class="d-flex justify-content-center gap-3 mt-4">
+          <a href="/buy" class="btn btn-primary btn-lg">Buy</a>
+          <a href="/rent" class="btn btn-outline-light btn-lg">Rent</a>
+          <a href="/list" class="btn btn-light btn-lg">Sell</a>
         </div>
       </div>
+    </div>
+    
 
-        <section>
+  <section>
     <app-contact-button></app-contact-button>
   </section>
     
