@@ -1,0 +1,24 @@
+.bi {
+    display: inline-block;
+  }
+
+  .btn-dan{
+ background-color: #5756A3 !important;
+  }
+  .btn-dann{
+    background-color: #77ddce !important;
+  }
+  button:focus {
+    outline: none;
+  }
+  
+  ul {
+    padding-left: 0;
+  }
+  .custom-img {
+    height: 300px; 
+    object-fit: cover;
+    border-radius: 8px; 
+  }
+  
+
