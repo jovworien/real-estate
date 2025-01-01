@@ -1,56 +1,51 @@
 <div class="container py-5">
-    <!-- Responsive Heading -->
-    <div class="text-center mb-2">
-      <h1 class="fw-bold display-5">About Us</h1>
-      <p class="text-secondary">Your trusted partner in real estate excellence</p>
+  <div class="text-center mb-2">
+    <h1 class="fw-bold display-5">About Us</h1>
+    <p class="text-secondary">Your trusted partner in real estate excellence</p>
+  </div>
+  <div class="row align-items-center">
+    <!-- Left Section: Image with Play Icon -->
+    <div class="col-md-5 position-relative">
+      <img
+        src="../images/hero-images/business.jpg"
+        alt="Real Estate"
+        class="img-fluid rounded mb-3"
+        [@slideIn]="imageState"
+      />
+      <div class="position-absolute" style="bottom: 20px; left: 20px">
+        <button
+          class="btn btn-dan rounded-circle"
+          style="width: 60px; height: 60px"
+        >
+          <i class="bi bi-play-fill fs-2 text-white"></i>
+        </button>
+      </div>
     </div>
-    <div class="row align-items-center">
-      <!-- Left Section: Image with Play Icon -->
-      <div class="col-md-5 position-relative">
-        <img
-          src="../images/hero-images/business.jpg"
-          alt="Real Estate"
-          class="img-fluid rounded mb-3"
-        />
-  
-        <div class="position-absolute" style="bottom: 20px; left: 20px">
-          <button
-            class="btn btn-dan rounded-circle"
-            style="width: 60px; height: 60px"
-          >
-            <i class="bi bi-play-fill fs-2 text-white"></i>
-          </button>
+    <!-- Right Section: Content -->
+    <div class="col-md-7">
+      <h2 class="fw-bold mb-4">Building Dreams, One Home at a Time</h2>
+      <p class="text-secondary">
+        With decades of expertise, we provide seamless real estate solutions
+        that transform dreams into reality—whether you're buying, selling, or renting.
+      </p>
+      <div class="d-flex mb-3">
+        <div class="me-4">
+          <i class="bi bi-house-door text-primary fs-3"></i>
+          <h6 class="fw-semibold mt-2">Property Buying</h6>
+          <p class="small text-muted">Find your dream home with expert guidance.</p>
+        </div>
+        <div>
+          <i class="bi bi-building text-success fs-3"></i>
+          <h6 class="fw-semibold mt-2">Commercial Listings</h6>
+          <p class="small text-muted">Explore premium office spaces and properties.</p>
         </div>
       </div>
-      <!-- Right Section: Content -->
-      <div class="col-md-7">
-        <h2 class="fw-bold mb-4">Building Dreams, One Home at a Time</h2>
-        <p class="text-secondary">
-          With decades of expertise, we provide seamless real estate solutions
-          that transform dreams into reality—whether you're buying, selling, or renting.
-        </p>
-        <div class="d-flex mb-3">
-          <!-- Feature 1 -->
-          <div class="me-4">
-            <i class="bi bi-house-door text-primary fs-3"></i>
-            <h6 class="fw-semibold mt-2">Property Buying</h6>
-            <p class="small text-muted">Find your dream home with expert guidance.</p>
-          </div>
-          <!-- Feature 2 -->
-          <div>
-            <i class="bi bi-building text-success fs-3"></i>
-            <h6 class="fw-semibold mt-2">Commercial Listings</h6>
-            <p class="small text-muted">Explore premium office spaces and properties.</p>
-          </div>
-        </div>
-        <!-- Bullet Points -->
-        <ul class="list-unstyled">
-          <li class="mb-2">✅ Trusted real estate solutions for over 20 years</li>
-          <li class="mb-2">✅ Access to the latest listings and market insights</li>
-          <li>✅ Professional agents dedicated to your success</li>
-        </ul>
-        <button class="btn btn-dann mt-3">More About</button>
-      </div>
+      <ul class="list-unstyled">
+        <li class="mb-2">✅ Trusted real estate solutions for over 20 years</li>
+        <li class="mb-2">✅ Access to the latest listings and market insights</li>
+        <li>✅ Professional agents dedicated to your success</li>
+      </ul>
+      <button class="btn btn-dann mt-3">More About</button>
     </div>
   </div>
- 
+</div>

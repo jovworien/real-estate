@@ -20,5 +20,9 @@
     object-fit: cover;
     border-radius: 8px; 
   }
+  .img-fluid {
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+  }
+  
   
 

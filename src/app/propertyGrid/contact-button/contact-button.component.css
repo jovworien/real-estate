@@ -37,15 +37,13 @@
   }
   
   .card-img-top {
-    height: 250px; /* Increased height for better fit */
-    object-fit: cover; /* Ensures the image fills the height while maintaining proportions */
-    width: 100%; /* Ensures full width */
+    height: 250px;
+    object-fit: cover; 
+    width: 100%;
 }
 
 @media (max-width: 576px) {
-    .card-img-top {
-        height: 150px; /* Adjust height for smaller screens */
-    }
+ 
 }
 
   
@@ -63,11 +61,7 @@
     z-index: 10;
   }
   
-  @media (max-width: 576px) {
-    .card-img-top {
-      height: 100px; /* Reduce image size on smaller screens */
-    }
-  
+  @media (max-width: 576px) {  
     .badge-sale {
       font-size: 12px;
       padding: 2px 4px;
