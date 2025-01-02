@@ -1,0 +1,109 @@
+.signup-container {
+    display: flex;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+  
+    .left-section {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f5f5f5;
+  
+      img {
+        max-width: 90%;
+        height: auto;
+      }
+    }
+  
+    .right-section {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+  
+      .form-container {
+        max-width: 400px;
+        width: 90%;
+        background: #fff;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+  
+        h2 {
+          margin-bottom: 20px;
+          font-size: 24px;
+          text-align: center;
+          color: #333;
+        }
+  
+        form {
+          .form-group {
+            margin-bottom: 16px;
+  
+            label {
+              display: block;
+              margin-bottom: 8px;
+              font-size: 14px;
+              color: #555;
+            }
+  
+            input {
+              width: 100%;
+              padding: 10px;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              font-size: 14px;
+            }
+          }
+  
+          .submit-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #673ab7;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+          }
+  
+          .submit-button:hover {
+            background-color: #5e33a6;
+          }
+        }
+      }
+    }
+    
+    .login-prompt {
+      margin-top: 16px;
+      font-size: 14px;
+      text-align: center;
+      color: #555;
+    }
+    
+    .login-prompt a {
+      color: #673ab7;
+      text-decoration: none;
+    }
+    
+    .login-prompt a:hover {
+      text-decoration: underline;
+    }
+    
+  
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      flex-direction: column;
+  
+      .left-section {
+        display: none;
+      }
+  
+      .right-section {
+        height: auto;
+      }
+    }
+  }
+  
