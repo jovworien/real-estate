@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+/* Hero style colors */
+
+:root {
+    /* Hero style colors start*/
+    --custom-navbar-color: #5756A3;
+    --nav-link-color: #333;
+
+    /* Hero style colors end*/
+    /* --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --accent-color: #f8f9fa;
+    --background-color: #ffffff;
+    --navbar-bg-color: #E814EB;
+    --text-color: #333333;
+    --navbar-text-color: #ffffff;
+    --navbar-bg-color: #343a40;
+    --sidebar-bg-color: #f8f9fa;
+    --bernard:#dc3545; */
+  }

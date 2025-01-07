@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+  isSidebarOpen = false;
 
+  // Toggle the sidebar visibility
+  toggleSidebar() {
+    this.isSidebarOpen = !this.isSidebarOpen;
+  }
+
+  // Close the sidebar
+  closeSidebar() {
+    this.isSidebarOpen = false;
+  }
 }

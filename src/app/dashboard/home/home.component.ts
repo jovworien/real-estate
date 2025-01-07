@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+   isSidebarOpen = false;  // Manage sidebar state
 
+  // Method to toggle sidebar state
+  toggleSidebar() {
+    this.isSidebarOpen = !this.isSidebarOpen;  // Toggle the sidebar state
+  }
 }

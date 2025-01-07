@@ -10,14 +10,13 @@
     cursor: pointer;
     z-index: 1000; 
   }
-  
   .custom-navbar {
-    background-color: #5756A3 !important; 
+    background-color: var(--custom-navbar-color) !important;; 
   }
-  
+
   .custom-navbar .nav-link {
     font-weight: bold;
-    color: #333 !important;
+    color: var(--nav-link-color) !important;
   }
   
   
@@ -62,11 +61,6 @@
     }
   }
   
-    .custom-navbar .nav-link {
-      font-weight: bold;
-      color: #333 !important;
-    }
-    
   
     .action-buttons {
       margin-left: auto;
@@ -117,10 +111,6 @@
   
   
   /* Navbar */
-  .custom-navbar {
-    background-color: #5756A3 !important; 
-  }
-  
   .custom-navbar .nav-link {
     font-weight: bold;
     color: white !important; 
