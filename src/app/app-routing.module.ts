@@ -25,6 +25,11 @@ import { MypropertiesComponent } from './dashboard/myproperties/myproperties.com
 import { InvstOffersComponent } from './dashboard/invst-offers/invst-offers.component';
 import { MyInvstComponent } from './dashboard/my-invst/my-invst.component';
 import { ProfileComponent } from './dashboard/profile/profile.component';
+import { NavbarComponent } from './dashboard/navbar/navbar.component';
+import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
+import { SidebarComponent } from './dashboard/sidebar/sidebar.component';
+
+
 
 const routes: Routes = [
   { path: '', redirectTo: 'img-display', pathMatch: 'full' },
@@ -52,6 +57,10 @@ const routes: Routes = [
   { path: 'dashboard/invst-offers', component: InvstOffersComponent },
   { path: 'dashboard/my-invst', component: MyInvstComponent },
   { path: 'dashboard/profile', component: ProfileComponent },
+  { path: 'dashboard/dashboard', component: DashboardComponent }, 
+  { path: 'dashboard/navbar', component: NavbarComponent },
+  { path: 'dashboard/sidebar', component: SidebarComponent }, 
+  { path: 'dashboard/profile', component: ProfileComponent }
 ];
 
 @NgModule({

@@ -29,6 +29,9 @@ import { MypropertiesComponent } from './dashboard/myproperties/myproperties.com
 import { InvstOffersComponent } from './dashboard/invst-offers/invst-offers.component';
 import { MyInvstComponent } from './dashboard/my-invst/my-invst.component';
 import { ProfileComponent } from './dashboard/profile/profile.component';
+import { NavbarComponent } from './dashboard/navbar/navbar.component';
+import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
+import { SidebarComponent } from './dashboard/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +59,10 @@ import { ProfileComponent } from './dashboard/profile/profile.component';
     MypropertiesComponent,
     InvstOffersComponent,
     MyInvstComponent,
-    ProfileComponent
+    ProfileComponent,
+    NavbarComponent,
+    DashboardComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,

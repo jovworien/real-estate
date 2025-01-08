@@ -1,1 +1,13 @@
+<app-navbar (sidebarToggle)="toggleSidebar()"></app-navbar>
+<app-sidebar [isSidebarActive]="isSidebarVisible"></app-sidebar>
+<div class="app-container">
+  <!-- <app-sidebar [isSidebarActive]="isSidebarVisible"></app-sidebar> -->
+  <div class="content">
+     <app-dashboard></app-dashboard>
+      <router-outlet></router-outlet>
+  </div>
+</div>
 
+<app-footer></app-footer>
+
+  

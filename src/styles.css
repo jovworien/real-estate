@@ -4,7 +4,10 @@
 :root {
     /* Hero style colors start*/
     --custom-navbar-color: #5756A3;
-    --nav-link-color: #333;
+    --nav-link-color: #fff;
+    --custom-toggler: #e5e0e0;
+    
+
 
     /* Hero style colors end*/
     /* --primary-color: #007bff;

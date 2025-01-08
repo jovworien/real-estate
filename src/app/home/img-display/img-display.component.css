@@ -16,7 +16,7 @@
 
   .custom-navbar .nav-link {
     font-weight: bold;
-    color: var(--nav-link-color) !important;
+    color: var(--nav-link-color);
   }
   
   
@@ -37,7 +37,7 @@
   .custom-toggler .line {
     height: 3px;
     width: 100%;
-    background-color: #e5e0e0; 
+    background-color: var(--custom-toggler); 
     border-radius: 2px;
     transition: all 0.3s ease;
   }
@@ -98,41 +98,20 @@
    /* Sidebar */
   .custom-offcanvas {
     width: 50%;
-    background-color: #5756A3; 
+    background-color: var(--custom-navbar-color); 
   }
+  
+  
   
   .custom-offcanvas .list-unstyled a {
-    color: #333;
-    text-decoration: none;
-    display: block;
-    padding: 10px;
-  }
-  
-  
-  
-  /* Navbar */
-  .custom-navbar .nav-link {
-    font-weight: bold;
-    color: white !important; 
-  }
-  
-  
-  
-  /* Sidebar */
-  .custom-offcanvas {
-    width: 50%;
-    background-color: #5756A3; 
-  }
-  
-  .custom-offcanvas .list-unstyled a {
-    color: white; 
+    color: var(--nav-link-color); 
     text-decoration: none;
     display: block;
     padding: 10px;
   }
   
   .custom-offcanvas .list-unstyled a:hover {
-    color: white; 
+    color: var(--nav-link-color); 
   }
   
   /* Register Button */
