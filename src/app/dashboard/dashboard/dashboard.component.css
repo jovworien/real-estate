@@ -1,6 +1,8 @@
 .dashboard-container {
   padding: 20px;
   margin-left: 200px;
+  display: flex;
+  flex-direction: column; /* Ensures proper stacking for mobile */
 }
 
 .card {
@@ -116,4 +118,6 @@
     margin-bottom: 15px;
   }
 }
+
+
 

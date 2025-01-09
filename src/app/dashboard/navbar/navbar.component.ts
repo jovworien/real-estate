@@ -7,10 +7,10 @@ import { Component, Output, EventEmitter } from '@angular/core';
 })
 
 export class NavbarComponent {
-  @Output() sidebarToggle = new EventEmitter<void>();
+  isSidebarActive: boolean = false;
 
   toggleSidebar() {
-    this.sidebarToggle.emit();
+    this.isSidebarActive = !this.isSidebarActive;
   }
 
 }
