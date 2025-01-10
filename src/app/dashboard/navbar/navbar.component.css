@@ -1,5 +1,11 @@
 
-/* Common Logo Styling */
+.logo-mobile {
+  width: 40px; 
+  height: auto; 
+  display: block;
+  margin: 0 auto; 
+}
+
 .logo-desktop,
 .logo-mobile {
   max-width: 100px;
@@ -223,15 +229,15 @@ ul li a {
 }
 
 .sidebar.active ~ .content {
-  margin-left: 0; /* Adjust Content When Sidebar is Hidden */
+  margin-left: 0; 
 }
 
 @media (max-width: 991.98px) {
   .sidebar {
-    transform: translateX(-200px); /* Default Hidden for Small Screens */
+    transform: translateX(-200px); 
   }
   .sidebar.active {
-    transform: translateX(0); /* Show Sidebar on Toggle */
+    transform: translateX(0);
   }
   .content {
     margin-left: 0;
