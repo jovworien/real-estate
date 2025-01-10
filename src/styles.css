@@ -8,11 +8,13 @@
     --custom-toggler: #e5e0e0;
    
       /* Dashboard Style Colors */
-      --navbar-bg-color: #4779c4; /* Background color for navbar */
+      --navbar-bg-color: #bab1b1; /* Background color for navbar */
       --navbar-color: #f8f9fa;    /* Text color for navbar */
       --navbar-hover-color: #0056b3; /* Hover color for navbar links */
       --navbar-border-color: #e7e7e7; /* Border color for navbar */
-    
+      --sidebar-color:#fff;
+      --sidebar-toggler-color:#4779c4;
+  
 
 
     /* Hero style colors end*/

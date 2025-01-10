@@ -118,20 +118,7 @@
 }
 
 
-/* Sidebar Styling */
-.sidebar {
-  width: 200px;
-  height: 100vh;
-  background: var(--navbar-bg-color);
-  color: white;
-  padding: 20px;
-  position: fixed;
-  left: -200px;
-  transition: all 0.3s ease-in-out;
-  z-index: 1000;
-  top: 0;
-  left: 0;
-}
+
 
 .sidebar.active {
   left: 0;
@@ -190,7 +177,7 @@ ul li a {
 .sidebar-toggler {
   background: none;
   border: none;
-  color: white;
+  color: var(--sidebar-toggler-color);
   font-size: 24px;
   cursor: pointer;
   position: absolute;
@@ -200,16 +187,13 @@ ul li a {
   transition: color 0.3s ease;
 }
 
-.sidebar-toggler:hover {
-  color: var(--navbar-color);
-}
 
 /* Adjust Sidebar for Large Screens */
 .sidebar {
   width: 200px;
   height: 100vh;
-  background: var(--navbar-bg-color);
-  color: white;
+  background: var(--sidebar-color);
+  color: rgb(13, 13, 13);
   padding: 20px;
   position: fixed;
   left: 0;
@@ -217,6 +201,7 @@ ul li a {
   transition: transform 0.3s ease-in-out;
   z-index: 1000;
 }
+
 
 .sidebar.active {
   transform: translateX(-200px); /* Hide Sidebar */
