@@ -1,10 +1,3 @@
-/* General Reset */
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
-
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -26,12 +19,12 @@ body {
 }
 
 .custom-navbar {
-  background-color: #5756A3 !important; 
+  background-color: var(--custom-navbar) !important; 
 }
 
 .custom-navbar .nav-link {
   font-weight: bold;
-  color: #333 !important;
+  color: var(--custom-navbar-link) !important;
 }
 
 
@@ -52,7 +45,7 @@ body {
 .custom-toggler .line {
   height: 3px;
   width: 100%;
-  background-color: #e5e0e0; 
+  background-color: var(--custom-toggler-line); 
   border-radius: 2px;
   transition: all 0.3s ease;
 }
@@ -78,10 +71,9 @@ body {
 
   .custom-navbar .nav-link {
     font-weight: bold;
-    color: #333 !important;
+    color: var(--custom-navbar-link) !important;
   }
   
-
   .action-buttons {
     margin-left: auto;
   }
@@ -118,38 +110,19 @@ body {
  /* Sidebar */
 .custom-offcanvas {
   width: 50%;
-  background-color: #5756A3; 
+  background-color: var(--custom-offcanvas); 
 }
 
 .custom-offcanvas .list-unstyled a {
-  color: #333;
+  color: var(--custom-navbar-link);
   text-decoration: none;
   display: block;
   padding: 10px;
 }
 
-
-
-/* Navbar */
-.custom-navbar {
-  background-color: #5756A3 !important; 
-}
-
-.custom-navbar .nav-link {
-  font-weight: bold;
-  color: white !important; 
-}
-
-
-
 /* Sidebar */
-.custom-offcanvas {
-  width: 50%;
-  background-color: #5756A3; 
-}
-
 .custom-offcanvas .list-unstyled a {
-  color: white; 
+  color: var(--custom-offcanvas-list-unstyled); 
   text-decoration: none;
   display: block;
   padding: 10px;
@@ -162,19 +135,20 @@ body {
 /* Register Button */
 .auth-buttons .btn-primary {
   background-color: white; 
-  color: #FF4F00 !important; 
+  color: var(--auth-buttons-primary) !important; 
 }
 
 .auth-buttons .btn-outline-primary {
   color: white !important; 
-  border-color: #FF4F00; 
+  border-color: var(--auth-buttons-primary) ; 
 }
 
 .auth-buttons .btn:hover {
-  background-color: #FF4F00 !important;
+  background-color: var(--auth-buttons-primary) !important;
   color: white !important; 
   border-color: #77ddce;
 }
+
 .logo{
   color: white;
   font-size: 1.5em;
