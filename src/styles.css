@@ -2,10 +2,24 @@
 /* Hero style colors */
 
 :root {
-    /* Hero style colors start*/
+    /* Hero style 1 colors start*/
     --custom-navbar-color: #5756A3;
     --nav-link-color: #fff;
     --custom-toggler: #e5e0e0;
+    --hero-section-overlay: rgba(0, 0, 0, 0.5);
+    --hero-section-p: #FFFFFF;
+    --auth-buttons-primary:#FFFFFF;
+    --auth-buttons-hover: #77ddce;
+    --hero-section-primary:#5756A3;
+    --hero-section-primary-hover:#77ddce;
+    --hero-section-outline-light: #FFFFFF;
+    --hero-section-outline-light-hover: #FFFFFF;
+    --hero-section-btn-light: #FFFFFF;
+    --hero-section-btn-light-hover: #77ddce;
+
+    /* Hero style 2 colors start*/
+
+
    
       /* Dashboard Style Colors */
       --navbar-bg-color: #bab1b1; /* Background color for navbar */

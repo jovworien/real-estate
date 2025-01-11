@@ -32,7 +32,7 @@ import { SidebarComponent } from './dashboard/sidebar/sidebar.component';
 
 
 const routes: Routes = [
-  // { path: '', redirectTo: 'img-display', pathMatch: 'full' },
+  { path: '', redirectTo: 'img-display', pathMatch: 'full' },
   { path: 'vid-display', component: VidDisplayComponent },
   { path: 'slide-display', component: SlideDisplayComponent },
   { path: 'img-display', component: ImgDisplayComponent },
@@ -61,7 +61,7 @@ const routes: Routes = [
   { path: 'dashboard/navbar', component: NavbarComponent },
   { path: 'dashboard/sidebar', component: SidebarComponent }, 
   { path: 'dashboard/profile', component: ProfileComponent },
-  { path: '', redirectTo: '/dashboard/home', pathMatch: 'full' }
+  // { path: '', redirectTo: '/dashboard/home', pathMatch: 'full' }
 ];
 
 @NgModule({
