@@ -146,11 +146,11 @@ body {
 .auth-buttons .btn:hover {
   background-color: var(--auth-buttons-primary) !important;
   color: white !important; 
-  border-color: #77ddce;
+  border-color: var(--auth-buttons-hover-border);
 }
 
 .logo{
-  color: white;
+  color: var(--logo);
   font-size: 1.5em;
   font-weight: bold;
 }
