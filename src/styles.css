@@ -23,10 +23,22 @@
     --custom-toggler-line:#e5e0e0;
     --custom-offcanvas: #5756A3;
     --custom-offcanvas-list-unstyled: #fff;
-    --auth-buttons-primary:#FF4F00;
+    --auth2-buttons-primary:#FF4F00;
     --auth-buttons-hover-border: #77ddce;
     --logo:#fff;
-    --hero: ;
+    --hero: #fff;
+    --hero-content:#fff;
+    --btn-primary-backgroud-color: #f13a0e;
+    --btn-primary-color: #fff;
+
+     /* Hero style 3 colors start*/
+     --custom-navbar-vid: #fff;
+     --custom-navbarvid-link:#333;
+     --custom-toggler-backgroud: #666161;
+     --custom-offcanvasvid:#bc3333;
+
+
+
 
 
 

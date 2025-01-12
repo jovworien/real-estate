@@ -135,17 +135,17 @@ body {
 /* Register Button */
 .auth-buttons .btn-primary {
   background-color: white; 
-  color: var(--auth-buttons-primary) !important; 
+  color: var(--auth2-buttons-primary) !important; 
 }
 
 .auth-buttons .btn-outline-primary {
   color: white !important; 
-  border-color: var(--auth-buttons-primary) ; 
+  border-color: var(--auth2-buttons-primary) ; 
 }
 
 .auth-buttons .btn:hover {
-  background-color: var(--auth-buttons-primary) !important;
-  color: white !important; 
+  background-color: var(--auth2-buttons-primary) !important;
+  color: #fff!important; 
   border-color: var(--auth-buttons-hover-border);
 }
 
@@ -159,7 +159,7 @@ body {
 .hero {
   position: relative;
   height: 100vh;
-  color: white;
+  color: var(--hero);
   overflow: hidden;
 }
 
@@ -202,7 +202,7 @@ body {
 .hero-content {
   position: relative;
   z-index: 2;
-  color: #fff; 
+  color: var(--hero-content); 
   text-align: center;
 }
 
@@ -217,8 +217,8 @@ body {
   padding: 15px 30px;
   border: none;
   border-radius: 8px;
-  background: #f13a0e;
-  color: white;
+  background: var(--btn-primary-backgroud-color);
+  color: var(--btn-primary-color);
   font-size: 16px;
   font-weight: bold;
   text-decoration: none;
@@ -242,7 +242,6 @@ body {
  /* Typewriting Effect */
  .typewriter {
   overflow: hidden;
-  /* border-right: 2px solid #fff; */
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: 0.15em;

@@ -28,12 +28,12 @@ body {
 }
 
 .custom-navbar {
-  background-color: #fff !important; 
+  background-color: var(--custom-navbarvid) !important; 
 }
 
 .custom-navbar .nav-link {
   font-weight: bold;
-  color: #333 !important;
+  color: var( --custom-navbarvid-link) !important;
 }
 
 
@@ -54,7 +54,7 @@ body {
 .custom-toggler .line {
   height: 3px;
   width: 100%;
-  background-color: #666161; 
+  background-color: var(--custom-toggler-backgroud); 
   border-radius: 2px;
   transition: all 0.3s ease;
 }
@@ -136,7 +136,7 @@ body {
 /* Sidebar */
 .custom-offcanvas {
   width: 50%;
-  background-color: #5756A3; 
+  background-color: var(--custom-offcanvasvid); 
 }
 
 .custom-offcanvas .list-unstyled a {
