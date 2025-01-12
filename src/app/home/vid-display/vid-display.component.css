@@ -111,27 +111,12 @@ body {
     }
   }
   
- /* Sidebar */
-.custom-offcanvas {
-  width: 50%;
-  background-color: #5756A3; 
-}
-
-.custom-offcanvas .list-unstyled a {
-  color: #333;
-  text-decoration: none;
-  display: block;
-  padding: 10px;
-}
-
-
 
 /* Navbar */
 .custom-navbar .nav-link {
   font-weight: bold;
   color: #666161 !important; 
 }
-
 
 /* Sidebar */
 .custom-offcanvas {
@@ -140,33 +125,34 @@ body {
 }
 
 .custom-offcanvas .list-unstyled a {
-  color: white; 
+  color: var(--custom-offcanvasvid-a); 
   text-decoration: none;
   display: block;
   padding: 10px;
 }
 
-.custom-offcanvas .list-unstyled a:hover {
+/* .custom-offcanvas .list-unstyled a:hover {
   color: white; 
-}
+} */
 
 /* Register Button */
 .auth-buttons .btn-primary {
-  background-color: white; 
-  color: #FF4F00 !important; 
+  background-color: var(--auth-buttonsvid-primary); 
+  color: var(--auth-buttonsvid-primary-color) !important; 
 }
 
 .auth-buttons .btn-outline-primary {
   color: rgb(18, 17, 17) !important; 
-  border-color: #d61e1e; 
+  border-color: var(--auth-buttons-btn-outline-primary); 
 }
 
 .auth-buttons .btn:hover {
-  background-color: #d61e1e !important;
-  color: white !important; 
+  background-color: var(--auth-buttonsvid-hover) !important;
+  color: #ffff !important; 
 }
+
 .logo {
-  color: #666161;
+  color: var(--logovid);
   font-size: 1.5em;
   font-weight: bold;
 }
@@ -179,7 +165,7 @@ body {
 .hero {
   position: relative;
   height: 100vh;
-  color: white;
+  color: var(--herovid);
   overflow: hidden;
 }
 
@@ -219,11 +205,10 @@ body {
 .hero-content {
   position: relative;
   z-index: 2;
-  color: #fff; 
+  color: var(--hero-contentvid-color); 
   text-align: center;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
 }
-
 
 .hero-buttons {
   display: flex;
@@ -246,8 +231,8 @@ body {
 
 .search-bar button {
   padding: 10px 20px;
-  background-color: red;
-  color: white;
+  background-color: var(--search-bar-button);
+  color: #fff;
   border: none;
   cursor: pointer;
   font-size: 1em;
@@ -271,7 +256,7 @@ body {
 
 .nav-link a {
   text-decoration: none;
-  color: white;
+  color: var(--nav-link-a);
   font-size: 1.2rem;
   transition: color 0.3s ease;
 }
@@ -279,9 +264,6 @@ body {
 .nav-link a:hover {
   color: rgb(199, 35, 35); 
 }
-
-
-
 
 /* Listings Section */
 .listings-section {
@@ -324,9 +306,9 @@ body {
   margin: 10px 0;
 }
 
-.listing p {
+.listing p{
   font-size: 1em;
-  color: gray;
+  color: var(--listing-p);
   margin-bottom: 10px;
 }
 
