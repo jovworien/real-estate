@@ -1,23 +1,23 @@
 .section-title {
-    font-size: 1.5rem; /* Default font size */
+    font-size: 1.5rem; 
     font-weight: bold;
-    color: #333; /* Neutral color for heading */
+    color: var(--section-title-color); 
     margin-bottom: 20px;
   }
   
   .section-title h2 {
-    font-size: 2rem; /* Larger size for desktops */
+    font-size: 2rem; 
   }
   
   @media (max-width: 768px) {
     .section-title h2 {
-      font-size: 1.5rem; /* Adjust size for tablets and smaller screens */
+      font-size: 1.5rem; 
     }
   }
   
   @media (max-width: 576px) {
     .section-title h2 {
-      font-size: 1.25rem; /* Adjust size for mobile screens */
+      font-size: 1.25rem; 
     }
   }
   
@@ -52,8 +52,8 @@
     position: absolute;
     top: 10px;
     left: 10px;
-    background-color: #FF4F00;
-    color: white;
+    background-color: var(--badge-sale-background-color);
+    color: var(--badge-sale-color);
     font-size: 14px;
     padding: 5px 10px;
     border-radius: 4px;
@@ -68,13 +68,13 @@
     }
   }
   .btn-primary {
-    background-color: #77ddce !important; 
+    background-color: var( --btn-primary-background-color)!important; 
     border-color: #77ddce !important;    
-    color: #fff !important;             
+    color: var(--btn-primary-color) !important;             
   }
   
   .btn-primary:hover {
-    background-color: #66cabd !important; 
+    background-color: var(--btn-primary-background-color-hover) !important; 
     border-color: #66cabd !important;
   }
 

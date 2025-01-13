@@ -1,1 +1,46 @@
-<p>profile works!</p>
+
+<div class="profile-container">
+    <div class="row">
+      <!-- Profile Image -->
+      <div class="col-md-4">
+        <div class="profile-image-card">
+          <img src="../images/auth-image/profile.png" alt="Agent Profile Picture" class="profile-image" />
+          <h3 class="text-center mt-3">John Doe</h3>
+          <p class="text-center">Real Estate Agent</p>
+        </div>
+      </div>
+  
+      <!-- Profile Details -->
+      <div class="col-md-8">
+        <div class="profile-details-card">
+          <h4>Contact Information</h4>
+          <ul class="list-unstyled">
+            <li><strong>Email:</strong> john.doeexample.com</li>
+            <li><strong>Phone:</strong> +1 123 456 7890</li>
+            <li><strong>Location:</strong> 123 Main Street, Anytown, USA</li>
+          </ul>
+          <h4>About</h4>
+          <p>
+            John Doe is a dedicated real estate agent with over 10 years of experience helping clients buy, sell, and invest in properties.
+          </p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Recent Listings -->
+    <div class="row mt-5">
+      <div class="col-12">
+        <h4>Recent Listings</h4>
+        <div class="row">
+          <div class="col-md-4" *ngFor="let listing of listings">
+            <div class="listing-card">
+              <img [src]="listing.image" [alt]="listing.title" class="listing-image" />
+              <h5 class="mt-2">{{ listing.title }}</h5>
+              <p>{{ listing.price }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

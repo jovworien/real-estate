@@ -7,7 +7,7 @@
 }
 
 .login-card {
-    background: white;
+    background: var(--login-card-background);
     width: 100%;
     max-width: 400px;
     border-radius: 10px;
@@ -19,7 +19,7 @@
 }
 
 h2 {
-    color: #333;
+    color: var(--h2-color);
 }
 
 .form-control {
@@ -28,7 +28,7 @@ h2 {
 }
 
 .btn-primary {
-    background-color: #5756A3;
+    background-color: var(--loginbtn-primary-background-color);
     border: none;
     height: 45px;
     font-size: 1rem;
@@ -36,11 +36,11 @@ h2 {
 }
 
 .btn-primary:hover {
-    background-color: #77ddce;
+    background-color: var(--loginbtn-primary-hover);
 }
 
 .text-primary {
-    color: #007bff;
+    color: var(--text-primary);
     text-decoration: none;
 }
 

@@ -48,20 +48,20 @@ const routes: Routes = [
   { path: 'login1', component: Login1Component },
   { path: 'login2', component: Login2Component },
   { path: 'login3', component: Login3Component },
-  { path: 'dashboard/home', component: HomeComponent },
-  { path: 'dashboard/logout', component: LogoutComponent },
-  { path: 'dashboard/header', component: HeaderComponent },
-  { path: 'dashboard/footer', component: FooterComponent },
-  { path: 'dashboard/properties', component: PropertiesComponent },
-  { path: 'dashboard/myproperties', component: MypropertiesComponent },
-  { path: 'dashboard/invst-offers', component: InvstOffersComponent },
-  { path: 'dashboard/my-invst', component: MyInvstComponent },
-  { path: 'dashboard/profile', component: ProfileComponent },
-  { path: 'dashboard/dashboard', component: DashboardComponent }, 
-  { path: 'dashboard/navbar', component: NavbarComponent },
-  { path: 'dashboard/sidebar', component: SidebarComponent }, 
-  { path: 'dashboard/profile', component: ProfileComponent },
-  // { path: '', redirectTo: '/dashboard/home', pathMatch: 'full' }
+  {
+    path: 'dashboard',
+    component: DashboardComponent,
+    children: [
+      { path: 'home', component: HomeComponent },
+      { path: 'profile', component: ProfileComponent },
+      { path: 'logout', component: LogoutComponent },
+      { path: 'properties', component: PropertiesComponent },
+      { path: 'myproperties', component: MypropertiesComponent },
+      { path: 'invst-offers', component: InvstOffersComponent },
+      { path: 'my-invst', component: MyInvstComponent },
+      { path: '', redirectTo: 'home', pathMatch: 'full' },
+    ],
+  },
 ];
 
 @NgModule({

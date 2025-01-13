@@ -47,7 +47,42 @@
      --search-bar-button: red;
      --nav-link-a: #fff;
      --listing-p: gray;
-     
+
+      /* contact-button component start*/
+      --section-title-color:#333;
+      --badge-sale-background-color: #FF4F00;
+      --badge-sale-color : #fff;
+      --btn-primary-background-color: #77ddce;
+      --btn-primary-color: #fff;
+      --btn-primary-background-color-hover: #66cabd;
+    
+     /* image price name component start*/
+    --listing-p-name: gray;
+    --badge-background-color: red;
+    --badge-color: #fff;
+    --icon-color: #fff;
+
+    /* open design component start*/
+
+    /* login1 design component start*/
+    --login-card-background: #fff;
+    --h2-color: #333;
+    --loginbtn-primary-background-color: #5756A3;
+    --loginbtn-primary-hover: #77ddce;
+    --text-primary: #007bff;
+
+    /* login2 design component start*/
+    --login-container-left-section: #f5f5f5;
+    --login-container-right-section: #fff;
+    --login-container-form-container-color: #fff;
+    --login-container-form-container-color-h2: #333;
+    --login-container-form-container-submitbtn: #673ab7;
+
+    
+
+
+    
+
 
 
 

@@ -1,1 +1,19 @@
-<p>myproperties works!</p>
+  <div class="property-container">
+    <div class="row">
+    <!-- Recent Listings -->
+    <div class="row mt-5">
+      <div class="col-12">
+        <h4>Recent Listings</h4>
+        <div class="row">
+          <div class="col-md-4" *ngFor="let listing of listings">
+            <div class="listing-card">
+              <img [src]="listing.image" [alt]="listing.title" class="listing-image" />
+              <h5 class="mt-2">{{ listing.title }}</h5>
+              <p>{{ listing.price }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
