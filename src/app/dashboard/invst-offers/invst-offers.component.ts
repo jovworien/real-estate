@@ -36,13 +36,6 @@ export class InvstOffersComponent {
     roi: '10%',
     location: 'Chicago, IL'
   },
-  {
-    title: 'Mountain Cabins',
-    image: '../images/investments/mountain-cabins.jpg',
-    price: '$300,000',
-    roi: '9%',
-    location: 'Aspen, CO'
-  }
 ];
 
   // Filter Options

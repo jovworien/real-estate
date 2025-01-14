@@ -62,8 +62,6 @@
     --badge-color: #fff;
     --icon-color: #fff;
 
-    /* open design component start*/
-
     /* login1 design component start*/
     --login-card-background: #fff;
     --h2-color: #333;
@@ -78,43 +76,54 @@
     --login-container-form-container-color-h2: #333;
     --login-container-form-container-submitbtn: #673ab7;
 
-    
 
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
-      /* Dashboard Style Colors */
-      --navbar-bg-color: #bab1b1; /* Background color for navbar */
-      --navbar-color: #f8f9fa;    /* Text color for navbar */
-      --navbar-hover-color: #0056b3; /* Hover color for navbar links */
-      --navbar-border-color: #e7e7e7; /* Border color for navbar */
-      --sidebar-color:#fff;
+      /* Dashboard navbar Style Colors */
+      --navbar-bg-color: #bab1b1;
+      --navbar-color: #f8f9fa;    
+      --navbar-hover-color: #0056b3;
+      --navbar-border-color: #e7e7e7; 
+      --sidebar-color:#bab1b1;
       --sidebar-toggler-color:#4779c4;
+
+        /* Dashboard invest-offer Style Colors */
+      --header-section-h1: #333;
+      --header-section-p: #666;
+      --summary-card: #fff;
+      --summary-card-h3:#007bff;
+      --summary-card-p: #555;
+      --investment-card: #fff;
+      --investment-card-h5: #007bff;
+      --investment-card-p: #555;
+      --investment-card-small: #777; 
+      --filter-options-select: #ddd; 
+      --filter-options-button-bg: #007bff;
+      --filter-options-button-color: white;
+      --filter-options-hover: #0056b3;
+
+       /* Dashboard home Style Colors */
+       --card-title-icon-color: #333;
+       --card-title-icon-i: #007bff;
+       --image-caption: #333;
+       --thead-dark-th-bg: #343a40;
+       --thead-dark-th-color: #fff;
+       --badge-success-bg: #28a745;
+       --badge-success-color: #fff;
+       --badge-warning-bg: #ffc107;
+       --badge-warning-color: #000000;
+       --badge-danger-bg: #dc3545;
+       --badge-danger-color: #fff;
+       --image-caption-color: #333;
+       
+
+
+
+
+
+
+
+
+
+
+      
   
-
-
-    /* Hero style colors end*/
-    /* --primary-color: #007bff;
-    --secondary-color: #6c757d;
-    --accent-color: #f8f9fa;
-    --background-color: #ffffff;
-    --navbar-bg-color: #E814EB;
-    --text-color: #333333;
-    --navbar-text-color: #ffffff;
-    --navbar-bg-color: #343a40;
-    --sidebar-bg-color: #f8f9fa;
-    --bernard:#dc3545; */
   }

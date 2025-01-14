@@ -17,12 +17,12 @@
   justify-content: center;
   gap: 10px; 
   font-size: 16px;
-  color: #333;
+  color: var(--card-title-icon-color);
 }
 
 .card-title-icon i {
   font-size: 20px;
-  color: #007bff; 
+  color: var(--card-title-icon-i); 
 }
 
 @media (max-width: 768px) {
@@ -47,7 +47,7 @@
 .image-caption {
   margin-top: 10px;
   font-weight: bold;
-  color: #333;
+  color: var(--image-caption);
 }
 
 .table-responsive {
@@ -64,8 +64,8 @@
 }
 
 .thead-dark th {
-  background-color: #343a40;
-  color: white;
+  background-color: var(--thead-dark-th-bg);
+  color: var(--thead-dark-th-color);
 }
 
 .badge {
@@ -75,18 +75,18 @@
 }
 
 .badge-success {
-  background-color: #28a745;
-  color: white;
+  background-color: var(--badge-success-bg);
+  color: var(--badge-success-color);
 }
 
 .badge-warning {
-  background-color: #ffc107;
-  color: black;
+  background-color: var(--badge-warning-bg);
+  color: var(--badge-warning-color);
 }
 
 .badge-danger {
-  background-color: #dc3545;
-  color: white;
+  background-color: var(--badge-danger-bg);
+  color: var(--badge-danger-color);
 }
 
 @media (max-width: 768px) {
@@ -110,7 +110,7 @@
 .image-caption {
   margin-top: 10px;
   font-weight: bold;
-  color: #333;
+  color: var(--image-caption-color);
 }
 
 @media (max-width: 768px) {
