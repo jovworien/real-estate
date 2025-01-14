@@ -4,7 +4,6 @@
   margin-left: 0; 
 }
 
-/* For large screens (e.g., desktop) */
 @media (min-width: 1024px) {
   .profile-container {
     margin-left: 220px; 

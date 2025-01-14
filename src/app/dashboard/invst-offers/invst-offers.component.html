@@ -1,1 +1,69 @@
-<p>invst-offers works!</p>
+<!-- <p>invst-offers works!</p> -->
+
+<div class="container investment-offers-container py-5">
+    <!-- Header Section -->
+    <div class="text-center mb-4">
+      <h1 class="fw-bold">Investment Offers</h1>
+      <p>Explore lucrative investment opportunities in prime locations.</p>
+    </div>
+  
+    <!-- Featured Investment Summary -->
+    <div class="row g-4 mb-4">
+      <div class="col-md-3 col-sm-6" *ngFor="let stat of stats">
+        <div class="card text-center stat-card">
+          <div class="card-body">
+            <h3 class="text-primary">{{ stat.value }}</h3>
+            <p class="text-muted">{{ stat.title }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Investment Offers Grid -->
+    <div class="row g-4">
+      <div class="col-md-4 col-sm-6" *ngFor="let offer of investmentOffers">
+        <div class="card investment-card">
+          <img [src]="offer.image" [alt]="offer.title" class="card-img-top investment-image" />
+          <div class="card-body">
+            <h5 class="investment-price text-primary">{{ offer.price }}</h5>
+            <p class="investment-roi text-success">ROI: {{ offer.roi }}</p>
+            <p class="investment-location">{{ offer.location }}</p>
+            <button class="btn btn-primary w-100">View Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Filter and Search Options -->
+    <div class="mt-4">
+      <h4>Filter Investment Options</h4>
+      <div class="row">
+        <div class="col-md-3">
+          <label for="price-range">Price Range</label>
+          <select id="price-range" class="form-select">
+            <option value="">Select</option>
+            <option value="low">Below $50,000</option>
+            <option value="mid">$50,000 - $200,000</option>
+            <option value="high">Above $200,000</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <label for="roi-range">ROI</label>
+          <select id="roi-range" class="form-select">
+            <option value="">Select</option>
+            <option value="5">5% - 10%</option>
+            <option value="10">10% - 15%</option>
+            <option value="15">Above 15%</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <label for="location">Location</label>
+          <input type="text" id="location" class="form-control" placeholder="Enter location">
+        </div>
+        <div class="col-md-3 d-flex align-items-end">
+          <button class="btn btn-primary w-100">Apply Filters</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
