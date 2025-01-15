@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-size: cover; /* Ensure image covers the entire section */
+    background-size: cover; 
     background-position: center;
     overflow: hidden;
 }
@@ -17,14 +17,14 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Overlay with semi-transparent black */
+    background-color: rgba(0, 0, 0, 0.5); 
     z-index: 1;
 }
 
 .signup-card {
     position: relative;
     z-index: 2;
-    background: white;
+    background: var( --signup3-card);
     width: 100%;
     max-width: 400px;
     border-radius: 10px;
@@ -37,7 +37,7 @@
 }
 
 h2 {
-    color: #333;
+    color: var(--signup3-card-h2);
 }
 
 .form-control {
@@ -46,7 +46,7 @@ h2 {
 }
 
 .btn-primary {
-    background-color: #5756A3;
+    background-color: var( --signup3-card-btn-primary);
     border: none;
     height: 45px;
     font-size: 1rem;
@@ -54,11 +54,11 @@ h2 {
 }
 
 .btn-primary:hover {
-    background-color: #77ddce;
+    background-color: var(--signup3-card-btn-primary-hover);
 }
 
 .text-primary {
-    color: #007bff;
+    color: var(--signup3-card-text-primary);
     text-decoration: none;
 }
 

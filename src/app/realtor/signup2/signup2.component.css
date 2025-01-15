@@ -8,7 +8,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #f5f5f5;
+      background-color: var(--signup2-container-left-section);
   
       img {
         max-width: 90%;
@@ -21,7 +21,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: white;
+      background-color: var(--signup2-container-right-section);
   
       .form-container {
         max-width: 400px;
@@ -61,8 +61,8 @@
           .submit-button {
             width: 100%;
             padding: 10px;
-            background-color: #673ab7;
-            color: white;
+            background-color: var(--signup2-container-submit-button-bg-color);
+            color:var( --signup2-container-submit-button-color);
             border: none;
             border-radius: 4px;
             font-size: 16px;
@@ -70,7 +70,7 @@
           }
   
           .submit-button:hover {
-            background-color: #5e33a6;
+            background-color: var( --signup2-container-submit-button-hover);
           }
         }
       }
@@ -84,7 +84,7 @@
     }
     
     .login-prompt a {
-      color: #673ab7;
+      color: var(--signup2-container-login-prompt-a);
       text-decoration: none;
     }
     

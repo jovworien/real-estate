@@ -72,7 +72,7 @@
 }
 
 .login-container .right-section .form-container form .submit-button:hover {
-  background-color: #5e33a6;
+  background-color: var(--login-container-form-container-submitbtn-hover);
 }
 
 .login-container .right-section .form-container form .extra-options {
@@ -82,7 +82,7 @@
 
 .login-container .right-section .form-container form .extra-options .forgot-password {
   font-size: 14px;
-  color: #673ab7;
+  color: var(--extra-options-forgot-password);
   text-decoration: none;
 }
 
@@ -98,7 +98,7 @@
 }
 
 .login-container .signup-prompt a {
-  color: #673ab7;
+  color: var(--login-container-signup-promp-a);
   text-decoration: none;
 }
 

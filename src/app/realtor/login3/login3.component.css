@@ -46,7 +46,7 @@ h2 {
 }
 
 .btn-primary {
-    background-color: #5756A3;
+    background-color: var(--btn-primary3-color);
     border: none;
     height: 45px;
     font-size: 1rem;
@@ -54,11 +54,11 @@ h2 {
 }
 
 .btn-primary:hover {
-    background-color: #77ddce;
+    background-color: var(--btn-primary3-hover);
 }
 
 .text-primary {
-    color: #007bff;
+    color: var(--text-primary3);
     text-decoration: none;
 }
 
