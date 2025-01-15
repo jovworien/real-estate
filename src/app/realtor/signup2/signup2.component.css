@@ -1,109 +1,107 @@
 .signup-container {
-    display: flex;
-    min-height: 100vh;
-    font-family: Arial, sans-serif;
-  
-    .left-section {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: var(--signup2-container-left-section);
-  
-      img {
-        max-width: 90%;
-        height: auto;
-      }
-    }
-  
-    .right-section {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: var(--signup2-container-right-section);
-  
-      .form-container {
-        max-width: 400px;
-        width: 90%;
-        background: #fff;
-        padding: 20px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-  
-        h2 {
-          margin-bottom: 20px;
-          font-size: 24px;
-          text-align: center;
-          color: #333;
-        }
-  
-        form {
-          .form-group {
-            margin-bottom: 16px;
-  
-            label {
-              display: block;
-              margin-bottom: 8px;
-              font-size: 14px;
-              color: #555;
-            }
-  
-            input {
-              width: 100%;
-              padding: 10px;
-              border: 1px solid #ccc;
-              border-radius: 4px;
-              font-size: 14px;
-            }
-          }
-  
-          .submit-button {
-            width: 100%;
-            padding: 10px;
-            background-color: var(--signup2-container-submit-button-bg-color);
-            color:var( --signup2-container-submit-button-color);
-            border: none;
-            border-radius: 4px;
-            font-size: 16px;
-            cursor: pointer;
-          }
-  
-          .submit-button:hover {
-            background-color: var( --signup2-container-submit-button-hover);
-          }
-        }
-      }
-    }
-    
-    .login-prompt {
-      margin-top: 16px;
-      font-size: 14px;
-      text-align: center;
-      color: #555;
-    }
-    
-    .login-prompt a {
-      color: var(--signup2-container-login-prompt-a);
-      text-decoration: none;
-    }
-    
-    .login-prompt a:hover {
-      text-decoration: underline;
-    }
-    
-  
-    /* Responsive Design */
-    @media (max-width: 768px) {
+  display: flex;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.signup-container .left-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--signup2-container-left-section);
+}
+
+.signup-container .left-section img {
+  max-width: 90%;
+  height: auto;
+}
+
+.signup-container .right-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--signup2-container-right-section);
+}
+
+.signup-container .right-section .form-container {
+  max-width: 400px;
+  width: 90%;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.signup-container .right-section .form-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+  color: #333;
+}
+
+.signup-container .right-section .form-container form .form-group {
+  margin-bottom: 16px;
+}
+
+.signup-container .right-section .form-container form .form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+.signup-container .right-section .form-container form .form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.signup-container .right-section .form-container form .submit-button {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--signup2-container-submit-button-bg-color);
+  color: var(--signup2-container-submit-button-color);
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.signup-container .right-section .form-container form .submit-button:hover {
+  background-color: var(--signup2-container-submit-button-hover);
+}
+
+.signup-container .login-prompt {
+  margin-top: 16px;
+  font-size: 14px;
+  text-align: center;
+  color: #555;
+}
+
+.signup-container .login-prompt a {
+  color: var(--signup2-container-login-prompt-a);
+  text-decoration: none;
+}
+
+.signup-container .login-prompt a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .signup-container {
       flex-direction: column;
-  
-      .left-section {
-        display: none;
-      }
-  
-      .right-section {
-        height: auto;
-      }
-    }
   }
-  
+
+  .signup-container .left-section {
+      display: none;
+  }
+
+  .signup-container .right-section {
+      height: auto;
+  }
+}
