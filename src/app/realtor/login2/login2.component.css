@@ -1,10 +1,10 @@
-.login-container {
+.login-container{
   display: flex;
   min-height: 100vh;
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.login-container .left-section {
+.login-container .left-section{
   flex: 1;
   display: flex;
   justify-content: center;
@@ -12,107 +12,98 @@
   background-color: var(--login-container-left-section);
 }
 
-.login-container .left-section img {
+.login-container .left-section img{
   max-width: 90%;
   height: auto;
 }
 
-.login-container .right-section {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--login-container-right-section);
+.login-container .right-section{
+ flex: 1;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color: var(--login-container-right-section);
 }
 
-.login-container .right-section .form-container {
-  max-width: 400px;
-  width: 90%;
-  background: var(--login-container-form-container-color);
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-}
-
-.login-container .right-section .form-container h2 {
+.login-container .right-section .form-container h2{
   margin-bottom: 20px;
   font-size: 24px;
   text-align: center;
   color: var(--login-container-form-container-color-h2);
 }
 
-.login-container .right-section .form-container form .form-group {
+.login-container .right-section .form-container form .form-group{
   margin-bottom: 16px;
 }
-
-.login-container .right-section .form-container form .form-group label {
+.login-container .right-section .form-container form .form-group label{
   display: block;
   margin-bottom: 8px;
   font-size: 14px;
   color: #555;
 }
 
-.login-container .right-section .form-container form .form-group input {
+
+.login-container .right-section .form-container form .form-group input{
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 14px;
+  cursor: pointer;
 }
 
-.login-container .right-section .form-container form .submit-button {
+.login-container .right-section .form-container form .submit-button{
   width: 100%;
   padding: 10px;
   background-color: var(--login-container-form-container-submitbtn);
-  color: white;
+  color: #fff;
   border: none;
   border-radius: 4px;
   font-size: 16px;
   cursor: pointer;
 }
 
-.login-container .right-section .form-container form .submit-button:hover {
+.login-container .right-section .form-container form .submit-button:hover{
   background-color: var(--login-container-form-container-submitbtn-hover);
 }
 
-.login-container .right-section .form-container form .extra-options {
-  margin-top: 16px;
+.login-container .right-section .form-container form .extra-options{
+  margin: 16px;
   text-align: center;
 }
 
-.login-container .right-section .form-container form .extra-options .forgot-password {
+.login-container .right-section .form-container form .extra-options .forgot-password{
   font-size: 14px;
   color: var(--extra-options-forgot-password);
   text-decoration: none;
 }
 
-.login-container .right-section .form-container form .extra-options .forgot-password:hover {
+.login-container .right-section .form-container form .extra-options .forgot-password:hover{
   text-decoration: underline;
 }
 
-.login-container .signup-prompt {
-  margin-top: 16px;
+.login-container .signup-prompt{
+  margin: 16px;
   font-size: 14px;
   text-align: center;
   color: #555;
 }
 
-.login-container .signup-prompt a {
+.login-container .signup-prompt a{
   color: var(--login-container-signup-promp-a);
   text-decoration: none;
 }
 
-.login-container .signup-prompt a:hover {
+.login-container .signup-prompt a:hover{
   text-decoration: underline;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .login-container {
+@media (max-width: 768px){
+  .login-container{
     flex-direction: column;
   }
 
-  .login-container .left-section {
+  .login-container .left-section{
     display: none;
   }
 

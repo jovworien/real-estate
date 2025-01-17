@@ -1,53 +1,54 @@
 /* Login Section */
-.login-section {
+.login-section{
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.login-card {
+
+.login-card{
     background: var(--login-card-background);
     width: 100%;
     max-width: 400px;
     border-radius: 10px;
 }
 
-.login-logo {
+.login-logo{
     width: 60px;
     height: 60px;
 }
 
-h2 {
+h2{
     color: var(--h2-color);
 }
 
-.form-control {
+.form-control{
     border-radius: 5px;
     height: 45px;
 }
 
-.btn-primary {
+.btn-primary{
     background-color: var(--loginbtn-primary-background-color);
-    border: none;
+   border: none;
     height: 45px;
-    font-size: 1rem;
-    border-radius: 5px;
+   border-radius: 5px;
 }
 
-.btn-primary:hover {
-    background-color: var(--loginbtn-primary-hover);
+.btn-primary:hover{
+background-color: var(--loginbtn-primary-hover);
 }
 
-.text-primary {
+.text-primary{
     color: var(--text-primary);
     text-decoration: none;
 }
 
-.text-primary:hover {
+.text-primary:hover{
     text-decoration: underline;
 }
 
-.shadow-lg {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.shadow-lg{
+    box-shadow:0 4px 8px rgb(0, 0, 0, 0.2);
 }
+

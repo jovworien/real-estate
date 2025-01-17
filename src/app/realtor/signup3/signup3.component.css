@@ -1,71 +1,82 @@
 /* Signup Section */
-.signup-section {
-    position: relative;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-size: cover; 
-    background-position: center;
-    overflow: hidden;
+.signup-section{
+   position:relative;
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-size: cover; 
+   overflow:hidden;
 }
 
-.signup-section::before {
+/* Add space on smaller screens */
+@media (max-width: 768px) {
+    .signup-card {
+        margin: 20px 10px; 
+    }
+
+    .signup-section {
+        padding: 20px 0; 
+    }
+}
+
+.signup-section::before{
     content: '';
-    position: absolute;
+    position:absolute;
     top: 0;
-    left: 0;
+    left:0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
 
 .signup-card {
     position: relative;
     z-index: 2;
-    background: var( --signup3-card);
+    background: var(--signup3-card);
     width: 100%;
-    max-width: 400px;
+    max-width:400px;
     border-radius: 10px;
     padding: 20px;
 }
 
-.signup-logo {
-    width: 60px;
-    height: 60px;
+.signup-logo{
+    width: 70px;
+    height: 70px;
 }
 
-h2 {
+h2{
     color: var(--signup3-card-h2);
 }
 
-.form-control {
+.form-control{
     border-radius: 5px;
     height: 45px;
 }
 
-.btn-primary {
-    background-color: var( --signup3-card-btn-primary);
+.btn-primary{
+    background-color: var(--signup3-card-btn-primary);
     border: none;
     height: 45px;
     font-size: 1rem;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
-.btn-primary:hover {
+.btn-primary:hover{
     background-color: var(--signup3-card-btn-primary-hover);
 }
 
-.text-primary {
+.text-primary{
     color: var(--signup3-card-text-primary);
     text-decoration: none;
 }
 
-.text-primary:hover {
+.text-primary:hover{
     text-decoration: underline;
 }
 
-.shadow-lg {
+.shadow-lg{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
