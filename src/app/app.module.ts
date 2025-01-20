@@ -31,7 +31,16 @@ import { MyInvstComponent } from './dashboard/my-invst/my-invst.component';
 import { ProfileComponent } from './dashboard/profile/profile.component';
 import { NavbarComponent } from './dashboard/navbar/navbar.component';
 import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
-import { SidebarComponent } from './dashboard/sidebar/sidebar.component';
+import { MainComponent } from './admin/main/main.component';
+import { SidebarComponent } from './admin/sidebar/sidebar.component';
+import { AgentComponent } from './admin/agent/agent.component';
+import { ReportsComponent } from './admin/reports/reports.component';
+import { AdminheaderComponent } from './admin/adminheader/adminheader.component';
+import { AdminfooterComponent } from './admin/adminfooter/adminfooter.component';
+
+
+
+
 
 @NgModule({
   declarations: [
@@ -62,7 +71,13 @@ import { SidebarComponent } from './dashboard/sidebar/sidebar.component';
     ProfileComponent,
     NavbarComponent,
     DashboardComponent,
-    SidebarComponent
+    MainComponent,
+    SidebarComponent,
+    AgentComponent,
+    ReportsComponent,
+    AdminheaderComponent,
+    AdminfooterComponent,
+    
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,170 @@
+/* Toolbar Styling */
+.custom-toolbar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #322653; /* Toolbar background color */
+    color: #f0f0f0; /* Text color */
+  }
+  
+  /* Spacer for alignment */
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  
+  /* Button Styling */
+  .neumorphic-button {
+    background-color: #322653; /* Match toolbar color for consistency */
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 3px 3px 5px #1f1a3d, -3px -3px 5px #4a3b7b; /* Neumorphism effect */
+  }
+  
+  .neumorphic-button:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 2px 4px #1f1a3d, -2px -2px 4px #4a3b7b;
+  }
+  
+  /* Icon Button Styling */
+  .example-icon {
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 24px;
+    background-color: #f0f0f0; 
+    color: #322653; /* Icon color */
+  }
+  
+  .notification-icon {
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 24px;
+    color: white;
+    background-color: transparent;
+    transition: transform 0.2s ease;
+  }
+  
+  .notification-icon:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Profile Button Styling */
+  button[routerLink] {
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 8px 16px;
+    border-radius: 10px;
+    text-transform: capitalize;
+  }
+  
+  /* Body Styling */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: #2b2b2b;
+  }
+
+  /* Toolbar Styling */
+.custom-toolbar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #322653;
+    color: #f0f0f0;
+  }
+  
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  
+  /* Neumorphic Button Styling */
+  .neumorphic-button {
+    background-color: #322653;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 3px 3px 5px #1f1a3d, -3px -3px 5px #4a3b7b;
+  }
+  
+  .neumorphic-button:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 2px 4px #1f1a3d, -2px -2px 4px #4a3b7b;
+  }
+  
+  /* Sidebar Styling */
+  .sidebar {
+    /* position: fixed; */
+    background-color: #322653;
+    width: 200px;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    margin-top: 48px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar li a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #d4d4d4;
+    transition: all 0.3s;
+  }
+  
+  .sidebar li a:hover {
+    background-color: #f1f1f1;
+    color: #6c6c6c;
+  }
+  
+  .sidebar li a.active {
+    background-color: #f1f1f1;
+    color: #000;
+  }
+  
+  .sub-menu {
+    padding-left: 20px;
+  }
+  
+  /* Sidebar Animation */
+  .hideSidebar {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  
+  .showSidebar {
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  
+  

@@ -1,0 +1,57 @@
+<div class="custom-toolbar">
+    <!-- Toggle Sidebar Button -->
+    <button
+      class="neumorphic-button example-icon"
+      aria-label="Toggle Sidebar"
+      (click)="toggleSidebar()"
+    >
+      &#9776; <!-- Unicode for menu icon -->
+    </button>
+    &nbsp;
+    <span>LMS</span>
+    <div class="example-spacer"></div>
+    <!-- Notification Icon Button -->
+    <button class="neumorphic-button notification-icon" aria-label="Notification icon button">
+      &#128276; <!-- Unicode for notifications icon -->
+    </button>
+    &nbsp;
+    <!-- Profile Button -->
+    <button routerLink="/profile" routerLinkActive="active" class="neumorphic-button">Profile</button>
+  </div>
+  
+  <div
+    class="sidebar"
+    [ngClass]="{ 'showSidebar': isSidebarVisible, 'hideSidebar': !isSidebarVisible }"
+  >
+    <ul>
+      <li>
+        <a routerLinkActive="active" (click)="toggleSubmenu()">
+          <span class="menu-icon">&#128200;</span> <!-- Unicode for dashboard -->
+          <span class="menu-text">Dashboard</span>
+          <span class="sub-menu-icon" [ngClass]="{ 'sub-menu-open': isSubmenuOpen }">
+            {{ isSubmenuOpen ? '▼' : '▶' }}
+          </span>
+        </a>
+        <ul *ngIf="isSubmenuOpen" class="sub-menu">
+          <li>
+            <a routerLink="/dashboard" routerLinkActive="active">
+              <span class="menu-icon">&#9432;</span> <!-- Unicode for details -->
+              <span class="menu-text">Details</span>
+            </a>
+          </li>
+          <li>
+            <a routerLink="/dashboard/messages" routerLinkActive="active">
+              <span class="menu-icon">&#9993;</span> <!-- Unicode for message -->
+              <span class="menu-text">Messages</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li><a routerLink="/home" routerLinkActive="active"><span class="menu-icon">&#127968;</span><span class="menu-text">Home</span></a></li>
+      <li><a routerLink="/main" routerLinkActive="active"><span class="menu-icon">&#11088;</span><span class="menu-text">Grade</span></a></li>
+      <li><a routerLink="/schedule" routerLinkActive="active"><span class="menu-icon">&#128197;</span><span class="menu-text">Schedule</span></a></li>
+      <li><a routerLink="/timetable" routerLinkActive="active"><span class="menu-icon">&#128336;</span><span class="menu-text">Time Table</span></a></li>
+      <li><a routerLink="/settings" routerLinkActive="active"><span class="menu-icon">&#9881;</span><span class="menu-text">Setting</span></a></li>
+    </ul>
+  </div>
+  

@@ -1,0 +1,32 @@
+<app-adminheader></app-adminheader>
+
+<div class="agents-container">
+    <div class="row" *ngFor="let agent of agents">
+      <!-- Profile Image -->
+      <div class="col-md-4">
+        <div class="profile-image-card">
+          <img [src]="agent.image" alt="Agent Profile Picture" class="profile-image" />
+          <h3 class="text-center mt-3">{{ agent.name }}</h3>
+          <p class="text-center">{{ agent.role }}</p>
+        </div>
+
+      </div>
+  
+      <!-- Profile Details -->
+      <div class="col-md-8">
+        <div class="profile-details-card">
+          <h4>Contact Information</h4>
+          <ul class="list-unstyled">
+            <li><strong>Email:</strong> {{ agent.email }}</li>
+            <li><strong>Phone:</strong> {{ agent.phone }}</li>
+            <li><strong>Location:</strong> {{ agent.location }}</li>
+          </ul>
+          <h4>About</h4>
+          <p>{{ agent.about }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+<app-adminfooter></app-adminfooter>
