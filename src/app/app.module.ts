@@ -77,6 +77,7 @@ import { AdminfooterComponent } from './admin/adminfooter/adminfooter.component'
     ReportsComponent,
     AdminheaderComponent,
     AdminfooterComponent,
+  
     
   ],
   imports: [
